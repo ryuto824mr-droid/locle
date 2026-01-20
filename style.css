@@ -1,155 +1,148 @@
-/* ===== reset ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: sans-serif;
 }
 
 body {
-  background: #f7f7f7;
-  color: #111;
-  line-height: 1.7;
+  background: #0b0b0f;
+  color: #fff;
 }
 
-/* ===== HERO ===== */
+/* HERO */
 .hero {
-  padding: 80px 20px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg,#000,#ff2f92,#36e0ff,#000);
+  background-size: 400% 400%;
+  animation: bgMove 12s infinite;
+}
+
+@keyframes bgMove {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+.hero-inner {
   text-align: center;
-  color: white;
-  background: linear-gradient(
-    120deg,
-    #000000,
-    #ff2f92,
-    #36e0ff
-  );
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 12px;
+  font-size: 3rem;
 }
 
-.hero p {
-  font-size: 1.1rem;
+/* WHY */
+.why {
+  padding: 120px 20px;
+  text-align: center;
 }
 
-/* ===== ABOUT ===== */
-.about {
-  max-width: 800px;
-  margin: 80px auto;
-  padding: 0 20px;
+.why-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 30px;
 }
 
-.about h2 {
-  font-size: 1.8rem;
-  margin-bottom: 16px;
+.why-card {
+  background: rgba(255,255,255,0.05);
+  padding: 40px;
+  border-radius: 20px;
 }
 
-/* ===== ACHIEVEMENTS ===== */
+/* ACHIEVEMENTS */
 .achievements {
-  max-width: 1100px;
-  margin: 80px auto;
-  padding: 0 20px;
+  padding: 120px 20px;
 }
 
-.achievements h2 {
-  font-size: 1.8rem;
-  margin-bottom: 32px;
-}
-
-/* grid */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 30px;
 }
 
-/* card */
 .card {
-  position: relative;
-  background: white;
-  padding: 24px;
-  border-radius: 18px;
-  text-decoration: none;
-  color: inherit;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
-  overflow: hidden;
-}
-
-/* gradient line */
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 5px;
-  width: 100%;
-  background: linear-gradient(
-    to right,
-    #000,
-    #ff2f92,
-    #36e0ff
-  );
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform .3s;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
 }
 
-/* TikTok logo */
 .tiktok {
-  position: absolute;
-  top: 16px;
-  right: 16px;
+  font-size: .7rem;
+  padding: 4px 10px;
   background: #000;
-  color: #fff;
-  font-size: 0.7rem;
-  padding: 6px 10px;
+  border: 1px solid #ff2f92;
   border-radius: 20px;
-  font-weight: bold;
 }
 
-.card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
+/* CONTACT */
+.contact {
+  padding: 140px 20px;
+  text-align: center;
 }
 
-.card p {
-  font-size: 0.95rem;
-  color: #555;
+.contact-box {
+  max-width: 420px;
+  margin: 40px auto 0;
+  padding: 40px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 20px;
 }
 
-/* stats */
-.stats {
-  display: flex;
-  gap: 24px;
-  margin-top: 20px;
+.contact-box span {
+  font-size: .7rem;
+  opacity: .6;
 }
 
-.label {
-  font-size: 0.75rem;
-  color: #777;
+.contact-box a {
+  color: #36e0ff;
 }
 
-.value {
-  display: block;
-  font-weight: bold;
-  font-size: 1rem;
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.8);
 }
 
-/* ===== FOOTER ===== */
+.modal-content {
+  background: #111;
+  max-width: 400px;
+  margin: 15% auto;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+/* ANIMATION */
+.fade, .fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .footer {
   text-align: center;
-  padding: 40px 0;
-  font-size: 0.8rem;
-  color: #777;
-}
-
-  background: #000;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
+  padding: 40px;
+  opacity: .6;
 }
