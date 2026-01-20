@@ -1,159 +1,151 @@
-/* ===== 全体 ===== */
-body {
+/* ===== reset ===== */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #222;
+}
+
+body {
+  background: #f7f7f7;
+  color: #111;
   line-height: 1.7;
-  background: #ffffff;
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* ===== ヘッダー ===== */
-.header {
-  padding: 16px 0;
-  border-bottom: 1px solid #eaeaea;
-  background: #ffffff;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 20px;
-  color: #2563eb;
-}
-
-/* ===== ファーストビュー ===== */
+/* ===== HERO ===== */
 .hero {
-  padding: 90px 0;
+  padding: 80px 20px;
   text-align: center;
-  background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+  color: white;
+  background: linear-gradient(
+    120deg,
+    #000000,
+    #ff2f92,
+    #36e0ff
+  );
 }
 
 .hero h1 {
-  font-size: 36px;
-  margin-bottom: 16px;
-  color: #0f172a;
-}
-
-.hero-text {
-  font-size: 16px;
-  margin-bottom: 36px;
-  color: #475569;
-}
-
-/* ===== ボタン ===== */
-.btn {
-  display: inline-block;
-  padding: 14px 32px;
-  background: #2563eb;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 999px;
-  font-weight: bold;
-  transition: opacity 0.2s, transform 0.2s;
-}
-
-.btn:hover {
-  opacity: 0.85;
-}
-
-/* CTA強化 */
-.cta-btn {
-  margin-top: 24px;
-  font-size: 16px;
-  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
-}
-
-.cta-btn:hover {
-  transform: translateY(-2px);
-}
-
-/* ===== セクション ===== */
-.section {
-  padding: 72px 0;
-}
-
-.section h2 {
-  font-size: 26px;
-  margin-bottom: 20px;
-  color: #0f172a;
-}
-
-.gray {
-  background: #f8fafc;
-}
-
-/* ===== サービス ===== */
-.service-list {
-  list-style: none;
-  padding: 0;
-}
-
-.service-list li {
+  font-size: 2.5rem;
   margin-bottom: 12px;
-  color: #334155;
 }
 
-/* ===== お問い合わせ ===== */
-.contact {
-  text-align: center;
-  background: #eff6ff;
+.hero p {
+  font-size: 1.1rem;
 }
 
-/* ===== フッター ===== */
+/* ===== ABOUT ===== */
+.about {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.about h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+/* ===== ACHIEVEMENTS ===== */
+.achievements {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.achievements h2 {
+  font-size: 1.8rem;
+  margin-bottom: 32px;
+}
+
+/* grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* card */
+.card {
+  position: relative;
+  background: white;
+  padding: 24px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+/* gradient line */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #000,
+    #ff2f92,
+    #36e0ff
+  );
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+
+/* TikTok logo */
+.tiktok {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #000;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* stats */
+.stats {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.value {
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* ===== FOOTER ===== */
 .footer {
-  padding: 32px 0;
-  background: #0f172a;
-  color: #cbd5f5;
-  font-size: 14px;
   text-align: center;
-}
-
-/* ===== スマホ対応 ===== */
-@media screen and (max-width: 768px) {
-
-  body {
-    font-size: 15px;
-  }
-
-  .hero {
-    padding: 64px 0;
-  }
-
-  .hero h1 {
-    font-size: 26px;
-    line-height: 1.4;
-  }
-
-  .hero-text {
-    font-size: 15px;
-  }
-
-  .section {
-    padding: 56px 0;
-  }
-
-  .section h2 {
-    font-size: 22px;
-  }
-
-  .btn {
-    padding: 14px 24px;
-    font-size: 15px;
-  }
-
-  .service-list li {
-    font-size: 15px;
-  }
-
-  .footer {
-    font-size: 13px;
-    padding: 24px 0;
-  }
+  padding: 40px 0;
+  font-size: 0.8rem;
+  color: #777;
 }
 
   background: #000;
