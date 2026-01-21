@@ -1,330 +1,307 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>株式会社LOCLE｜群馬のSNS運用代行</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>株式会社LOCLE｜SNS運用代行</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-:root{
-  --main:#2563EB;
-  --sub:#10B981;
-  --accent:#F59E0B;
-  --text:#1f2937;
-  --bg:#ffffff;
-  --gray:#f3f4f6;
-}
+  <style>
+    :root {
+      --black: #111111;
+      --green-main: #44B13F;
+      --green-light: #AACF45;
+      --gray: #666;
+      --bg: #ffffff;
+    }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-body{
-  font-family:"Noto Sans JP", sans-serif;
-  color:var(--text);
-  background:var(--bg);
-  line-height:1.8;
-}
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--black);
+      line-height: 1.7;
+    }
 
-section{
-  padding:90px 8%;
-}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-h2{
-  font-size:32px;
-  margin-bottom:24px;
-}
+    section {
+      padding: 100px 8%;
+    }
 
-p{
-  font-size:16px;
-}
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      letter-spacing: -0.02em;
+    }
 
-/* ボタン */
-.btn{
-  display:inline-block;
-  background:var(--accent);
-  color:#fff;
-  padding:14px 34px;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:700;
-  margin-top:24px;
-}
+    /* ===== Header ===== */
+    header {
+      padding: 24px 8%;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-/* HERO */
-.hero{
-  background:linear-gradient(180deg,#f8fafc,#ffffff);
-  min-height:90vh;
-  display:flex;
-  align-items:center;
-}
+    header img {
+      height: 36px;
+    }
 
-.hero h1{
-  font-size:42px;
-  line-height:1.4;
-}
+    /* ===== Hero ===== */
+    .hero {
+      padding: 120px 8%;
+    }
 
-.hero span{
-  color:var(--main);
-}
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
 
-/* PROBLEM */
-.problem{
-  background:var(--gray);
-}
+    .hero span {
+      color: var(--green-main);
+    }
 
-.problem li{
-  margin-bottom:12px;
-}
+    .hero p {
+      font-size: 18px;
+      color: var(--gray);
+      max-width: 700px;
+    }
 
-/* STRENGTH */
-.strengths{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:32px;
-}
+    /* ===== 実績 ===== */
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
 
-.strength{
-  background:#fff;
-  border-radius:16px;
-  padding:32px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.05);
-  opacity:0;
-  transform:translateY(40px);
-  transition:0.8s;
-}
+    .work-card {
+      border: 1px solid #eee;
+      border-radius: 16px;
+      padding: 28px;
+      transition: all 0.3s ease;
+      position: relative;
+      background: #fff;
+    }
 
-.strength.show{
-  opacity:1;
-  transform:none;
-}
+    .work-card::after {
+      content: "TikTok";
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-size: 12px;
+      font-weight: 600;
+      color: white;
+      background: var(--black);
+      padding: 4px 8px;
+      border-radius: 8px;
+    }
 
-/* SERVICE */
-.services{
-  background:var(--gray);
-}
+    .work-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+    }
 
-.service-box{
-  background:#fff;
-  padding:32px;
-  border-radius:16px;
-  margin-bottom:24px;
-}
+    .work-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
 
-/* WORKS */
-.works{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:24px;
-}
+    .work-card p {
+      font-size: 15px;
+      color: var(--gray);
+    }
 
-.work{
-  background:#fff;
-  padding:28px;
-  border-radius:16px;
-  border:1px solid #e5e7eb;
-  cursor:pointer;
-  transition:0.3s;
-}
+    /* ===== 選ばれる理由 ===== */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 40px;
+    }
 
-.work:hover{
-  transform:translateY(-6px);
-  box-shadow:0 15px 40px rgba(0,0,0,0.08);
-}
+    .step {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease;
+    }
 
-.work small{
-  color:var(--main);
-  font-weight:500;
-}
+    .step.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-/* SEMINAR */
-.seminar{
-  background:var(--gray);
-}
+    .step span {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--green-main);
+      margin-bottom: 8px;
+    }
 
-/* COMPANY */
-.company table{
-  margin-top:24px;
-}
+    .step h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
 
-.company td{
-  padding:8px 0;
-}
+    .step p {
+      color: var(--gray);
+      font-size: 15px;
+    }
 
-/* CONTACT */
-.contact{
-  background:linear-gradient(180deg,#ffffff,#f8fafc);
-  text-align:center;
-  opacity:0;
-  transform:translateY(60px);
-  transition:1s;
-}
+    /* ===== Contact ===== */
+    .contact {
+      background: #f9f9f9;
+      border-radius: 32px;
+      padding: 80px 8%;
+      opacity: 0;
+      transform: translateY(60px);
+      transition: all 0.7s ease;
+    }
 
-.contact.show{
-  opacity:1;
-  transform:none;
-}
-</style>
+    .contact.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .contact p {
+      margin-bottom: 24px;
+      color: var(--gray);
+    }
+
+    .contact a {
+      display: inline-block;
+      background: var(--green-main);
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background: var(--green-light);
+      color: var(--black);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      padding: 40px 8%;
+      font-size: 14px;
+      color: #999;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- HERO -->
+<header>
+  <img src="img/locle-logo.png" alt="LOCLE logo">
+</header>
+
 <section class="hero">
-  <div>
-    <h1>
-      群馬の採用・集客を<br>
-      <span>SNSで、もっと分かりやすく。</span>
-    </h1>
-    <p>
-      SNS知識ゼロでも大丈夫。<br>
-      企画から運用まで、丸投げOK。
-    </p>
-    <a href="#contact" class="btn">まずは無料相談</a>
-  </div>
-</section>
-
-<!-- PROBLEM -->
-<section class="problem">
-  <h2>こんなお悩みありませんか？</h2>
-  <ul>
-    <li>SNSをやる必要は感じているが、何から始めればいいか分からない</li>
-    <li>社内に若い人がおらず、発信の感覚が分からない</li>
-    <li>採用がうまくいかず、若者へのアプローチに悩んでいる</li>
-  </ul>
-</section>
-
-<!-- STRENGTH -->
-<section>
-  <h2>LOCLEが選ばれる理由</h2>
-  <div class="strengths">
-    <div class="strength">
-      <h3>知識ゼロでも安心</h3>
-      <p>専門用語を使わず、現場に寄り添いながらSNS運用をサポートします。</p>
-    </div>
-    <div class="strength">
-      <h3>Z世代視点</h3>
-      <p>若者に届く企画・表現で、採用・集客につながる発信を行います。</p>
-    </div>
-    <div class="strength">
-      <h3>群馬密着</h3>
-      <p>地域性を理解しているからこそ、現実的なSNS活用が可能です。</p>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICE -->
-<section class="services">
-  <h2>事業内容</h2>
-
-  <div class="service-box">
-    <h3>SNS運用代行・コンサルティング</h3>
-    <p>
-      TikTok・Instagramを中心に、企画・撮影・運用・分析まで一貫対応。
-    </p>
-  </div>
-
-  <div class="service-box">
-    <h3>群馬お仕事図鑑</h3>
-    <p>
-      群馬の企業と若者をつなぐ、採用広報メディアを運営しています。
-    </p>
-  </div>
-</section>
-
-<!-- WORKS -->
-<section>
-  <h2>実績・事例</h2>
-  <div class="works">
-
-    <div class="work" onclick="location.href='https://www.tiktok.com/@shinnitto.recruit'">
-      <h3>新日東様</h3>
-      <small>採用向けTikTok運用</small>
-      <p>
-        課題：若年層からの応募が少ない<br>
-        施策：仕事紹介・社員発信の動画運用<br>
-        成果：若年層からの認知向上・応募増加
-      </p>
-    </div>
-
-    <div class="work" onclick="location.href='https://www.tiktok.com/@masumoto.akitsu'">
-      <h3>桝元 秋津店様</h3>
-      <small>店舗集客支援</small>
-      <p>
-        課題：新規来店のきっかけ不足<br>
-        施策：商品・スタッフ紹介動画<br>
-        成果：SNS経由の来店が増加
-      </p>
-    </div>
-
-    <div class="work" onclick="location.href='https://www.tiktok.com/@toyocareservice'">
-      <h3>東洋ケアサービス様</h3>
-      <small>採用ブランディング</small>
-      <p>
-        課題：業界イメージによる応募の少なさ<br>
-        施策：職場の雰囲気を伝える発信<br>
-        成果：若年層の認知拡大
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- SEMINAR -->
-<section class="seminar">
-  <h2>セミナー・イベント</h2>
+  <h1>
+    地方企業の魅力を<br>
+    <span>SNSで見える化</span>する
+  </h1>
   <p>
-    群馬県内企業向けに、SNS活用セミナー・研修を実施しています。
+    株式会社LOCLEは、群馬を拠点にTikTok・Instagramを中心とした
+    SNS運用代行・採用広報支援を行うマーケティング会社です。
   </p>
 </section>
 
-<!-- COMPANY -->
-<section class="company">
-  <h2>会社情報</h2>
-  <table>
-    <tr><td>会社名</td><td>株式会社LOCLE</td></tr>
-    <tr><td>所在地</td><td>群馬県</td></tr>
-    <tr><td>事業内容</td><td>SNSマーケティング支援</td></tr>
-  </table>
+<section>
+  <h2>実績</h2>
+  <div class="works-grid">
+    <a href="https://www.tiktok.com/@shinnitto.recruit" target="_blank" class="work-card">
+      <h3>新日東</h3>
+      <p>累計再生数 15万回超<br>採用応募数 3.2倍</p>
+    </a>
+
+    <a href="https://www.tiktok.com/@masumoto.akitsu" target="_blank" class="work-card">
+      <h3>桝元 秋津店</h3>
+      <p>1動画で10万回再生達成<br>来店客層が20代中心に</p>
+    </a>
+
+    <a href="https://www.tiktok.com/@toyocareservice" target="_blank" class="work-card">
+      <h3>東洋ケアサービス</h3>
+      <p>フォロワー700人突破<br>採用動画の保存率向上</p>
+    </a>
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>お問い合わせ</h2>
-  <p>
-    SNS運用・採用広報・群馬お仕事図鑑について<br>
-    お気軽にご相談ください。
-  </p>
-  <a
-    href="https://docs.google.com/forms/d/e/xxxxxxxx/viewform"
-    class="btn"
-    target="_blank"
-    rel="noopener"
-  >
-    無料相談フォームへ
-  </a>
+<section>
+  <h2>なぜLOCLEが選ばれるのか</h2>
+  <div class="steps">
+    <div class="step">
+      <span>STEP 01</span>
+      <h3>若者視点の企画力</h3>
+      <p>学生・若手目線で「見たくなる」「共感される」構成を設計。</p>
+    </div>
+
+    <div class="step">
+      <span>STEP 02</span>
+      <h3>採用に直結する導線</h3>
+      <p>バズで終わらせず、応募・来店まで設計した運用。</p>
+    </div>
+
+    <div class="step">
+      <span>STEP 03</span>
+      <h3>地方企業特化</h3>
+      <p>群馬を中心に、地方企業の課題を理解した支援。</p>
+    </div>
+  </div>
 </section>
+
+<section>
+  <div class="contact">
+    <h2>お問い合わせ</h2>
+    <p>
+      SNS運用・採用広報についてのご相談は<br>
+      下記フォームよりお気軽にお問い合わせください。
+    </p>
+    <a href="https://forms.gle/XXXXXXXX" target="_blank">
+      Googleフォームで問い合わせる
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 株式会社LOCLE
+</footer>
 
 <script>
-const targets = document.querySelectorAll('.strength, .contact');
+  const steps = document.querySelectorAll('.step');
+  const contact = document.querySelector('.contact');
 
-window.addEventListener('scroll', ()=>{
-  const trigger = window.innerHeight * 0.85;
-  targets.forEach(el=>{
-    if(el.getBoundingClientRect().top < trigger){
-      el.classList.add('show');
-    }
-  });
-});
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.3 });
+
+  steps.forEach(step => observer.observe(step));
+  observer.observe(contact);
 </script>
 
 </body>
 </html>
+
 
 });
 </script>
