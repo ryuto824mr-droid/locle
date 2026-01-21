@@ -32,7 +32,7 @@ body{
 }
 
 section{
-  padding:80px 8%;
+  padding:90px 8%;
 }
 
 h2{
@@ -44,19 +44,19 @@ p{
   font-size:16px;
 }
 
-/* ===== ボタン ===== */
+/* ボタン */
 .btn{
   display:inline-block;
   background:var(--accent);
   color:#fff;
-  padding:14px 32px;
+  padding:14px 34px;
   border-radius:30px;
   text-decoration:none;
   font-weight:700;
   margin-top:24px;
 }
 
-/* ===== ファーストビュー ===== */
+/* HERO */
 .hero{
   background:linear-gradient(180deg,#f8fafc,#ffffff);
   min-height:90vh;
@@ -73,20 +73,16 @@ p{
   color:var(--main);
 }
 
-/* ===== 悩み ===== */
+/* PROBLEM */
 .problem{
   background:var(--gray);
-}
-
-.problem ul{
-  margin-top:20px;
 }
 
 .problem li{
   margin-bottom:12px;
 }
 
-/* ===== 強み ===== */
+/* STRENGTH */
 .strengths{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -108,7 +104,7 @@ p{
   transform:none;
 }
 
-/* ===== サービス ===== */
+/* SERVICE */
 .services{
   background:var(--gray);
 }
@@ -120,7 +116,7 @@ p{
   margin-bottom:24px;
 }
 
-/* ===== 実績 ===== */
+/* WORKS */
 .works{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -143,14 +139,15 @@ p{
 
 .work small{
   color:var(--main);
+  font-weight:500;
 }
 
-/* ===== セミナー ===== */
+/* SEMINAR */
 .seminar{
   background:var(--gray);
 }
 
-/* ===== 会社情報 ===== */
+/* COMPANY */
 .company table{
   margin-top:24px;
 }
@@ -159,7 +156,7 @@ p{
   padding:8px 0;
 }
 
-/* ===== お問い合わせ ===== */
+/* CONTACT */
 .contact{
   background:linear-gradient(180deg,#ffffff,#f8fafc);
   text-align:center;
@@ -208,15 +205,15 @@ p{
   <div class="strengths">
     <div class="strength">
       <h3>知識ゼロでも安心</h3>
-      <p>専門用語を使わず、二人三脚でSNS運用を支援します。</p>
+      <p>専門用語を使わず、現場に寄り添いながらSNS運用をサポートします。</p>
     </div>
     <div class="strength">
       <h3>Z世代視点</h3>
-      <p>若者に「刺さる」企画とクリエイティブを設計。</p>
+      <p>若者に届く企画・表現で、採用・集客につながる発信を行います。</p>
     </div>
     <div class="strength">
       <h3>群馬密着</h3>
-      <p>地域を理解しているからこそ、現実的な提案が可能。</p>
+      <p>地域性を理解しているからこそ、現実的なSNS活用が可能です。</p>
     </div>
   </div>
 </section>
@@ -235,7 +232,7 @@ p{
   <div class="service-box">
     <h3>群馬お仕事図鑑</h3>
     <p>
-      群馬の企業と若者をつなぐ採用広報メディアを運営しています。
+      群馬の企業と若者をつなぐ、採用広報メディアを運営しています。
     </p>
   </div>
 </section>
@@ -244,23 +241,37 @@ p{
 <section>
   <h2>実績・事例</h2>
   <div class="works">
+
     <div class="work" onclick="location.href='https://www.tiktok.com/@shinnitto.recruit'">
-      <h3>製造業 新日東様</h3>
+      <h3>新日東様</h3>
       <small>採用向けTikTok運用</small>
-      <p>応募数が約3倍に増加</p>
+      <p>
+        課題：若年層からの応募が少ない<br>
+        施策：仕事紹介・社員発信の動画運用<br>
+        成果：若年層からの認知向上・応募増加
+      </p>
     </div>
 
     <div class="work" onclick="location.href='https://www.tiktok.com/@masumoto.akitsu'">
-      <h3>飲食店 桝元秋津店様</h3>
-      <small>店舗集客</small>
-      <p>SNS経由の来店増加</p>
+      <h3>桝元 秋津店様</h3>
+      <small>店舗集客支援</small>
+      <p>
+        課題：新規来店のきっかけ不足<br>
+        施策：商品・スタッフ紹介動画<br>
+        成果：SNS経由の来店が増加
+      </p>
     </div>
 
     <div class="work" onclick="location.href='https://www.tiktok.com/@toyocareservice'">
       <h3>東洋ケアサービス様</h3>
       <small>採用ブランディング</small>
-      <p>若年層の認知拡大に成功</p>
+      <p>
+        課題：業界イメージによる応募の少なさ<br>
+        施策：職場の雰囲気を伝える発信<br>
+        成果：若年層の認知拡大
+      </p>
     </div>
+
   </div>
 </section>
 
@@ -268,7 +279,7 @@ p{
 <section class="seminar">
   <h2>セミナー・イベント</h2>
   <p>
-    群馬県内企業向けに、SNS活用セミナーや企業研修を実施しています。
+    群馬県内企業向けに、SNS活用セミナー・研修を実施しています。
   </p>
 </section>
 
@@ -285,8 +296,18 @@ p{
 <!-- CONTACT -->
 <section id="contact" class="contact">
   <h2>お問い合わせ</h2>
-  <p>SNS運用・採用広報のご相談はお気軽に</p>
-  <a href="mailto:info@locle.jp" class="btn">無料相談をする</a>
+  <p>
+    SNS運用・採用広報・群馬お仕事図鑑について<br>
+    お気軽にご相談ください。
+  </p>
+  <a
+    href="https://docs.google.com/forms/d/e/xxxxxxxx/viewform"
+    class="btn"
+    target="_blank"
+    rel="noopener"
+  >
+    無料相談フォームへ
+  </a>
 </section>
 
 <script>
@@ -299,6 +320,12 @@ window.addEventListener('scroll', ()=>{
       el.classList.add('show');
     }
   });
+});
+</script>
+
+</body>
+</html>
+
 });
 </script>
 
