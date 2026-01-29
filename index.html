@@ -1,156 +1,296 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>株式会社LOCLE｜群馬のSNSマーケティング支援</title>
+  <meta charset="UTF-8" />
+  <title>株式会社LOCLE｜群馬発SNSマーケティング支援</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <meta name="description" content="株式会社LOCLEは群馬発のSNSマーケティング支援会社。TikTok・Instagramを活用し、中小企業の採用・集客・ブランディングを支援します。">
-  <meta name="keywords" content="群馬 SNS運用, TikTok 採用, SNS運用代行, 採用広報, LOCLE">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="株式会社LOCLE">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- OGP -->
-  <meta property="og:title" content="株式会社LOCLE｜群馬のSNSマーケティング支援">
-  <meta property="og:description" content="知識ゼロから丸投げOK。Z世代に届くSNS運用で採用と集客を支援。">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://あなたのURL/img/locle-logo.png">
-  <meta property="og:url" content="https://あなたのURL/">
+  <style>
+    /* ===== 基本 ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: #111;
+      background: #fff;
+      line-height: 1.8;
+    }
+
+    section {
+      padding: 100px 20px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: #555;
+      font-size: 16px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== ヘッダー ===== */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 34px;
+      transition: 0.3s ease;
+    }
+
+    header img:hover {
+      opacity: 0.75;
+    }
+
+    /* ===== ヒーロー ===== */
+    .hero {
+      padding-top: 160px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      margin-bottom: 24px;
+    }
+
+    .hero span {
+      color: #44B13F;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 36px;
+      background: #44B13F;
+      color: #fff;
+      border-radius: 40px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    /* ===== About ===== */
+    .about {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .about p {
+      margin-bottom: 20px;
+    }
+
+    /* ===== 伴走型 ===== */
+    .support {
+      background: #fafafa;
+    }
+
+    .support-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .support-step {
+      background: #fff;
+      padding: 32px;
+      border-radius: 20px;
+      border: 1px solid #eee;
+    }
+
+    .step-number {
+      color: #44B13F;
+      font-weight: 700;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* ===== 実績 ===== */
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .work-card {
+      border: 1px solid #eee;
+      padding: 28px;
+      border-radius: 18px;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    .work-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .work-card::after {
+      content: "TikTok";
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-size: 12px;
+      color: #44B13F;
+      font-weight: 700;
+    }
+
+    /* ===== Contact ===== */
+    .contact {
+      text-align: center;
+      background: #fafafa;
+    }
+
+    .contact p {
+      margin-bottom: 30px;
+    }
+
+    /* ===== アニメーション ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.8s ease;
+    }
+
+    .fade-in.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
-<body id="top">
+<body>
 
-<!-- ===== HEADER ===== -->
-<header class="header">
+<header>
   <div class="header-inner">
-    <a href="#top" class="logo">
-      <img src="img/locle-logo.png" alt="株式会社LOCLE ロゴ">
-    </a>
-
-    <!-- 追加：ヘッダーナビ -->
-    <nav class="nav">
-      <a href="#about">LOCLEとは</a>
-      <a href="#support">伴走型支援</a>
-      <a href="#works">実績</a>
-      <a href="#contact" class="nav-cta">無料相談</a>
-    </nav>
+    <img src="img/locle-logo.png" alt="株式会社LOCLE ロゴ">
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
 <section class="hero fade-in">
-  <h1>群馬の採用・集客を<br><span>SNSで解決する</span></h1>
+  <h1>地方企業の魅力を<br><span>SNSで、選ばれる理由に。</span></h1>
   <p>
-    知識ゼロからでも安心。<br>
-    企業とZ世代をつなぐSNSパートナー
+    群馬発、Z世代視点のSNSマーケティングで<br>
+    採用とブランディングを支援します。
   </p>
+  <a href="#contact" class="btn">無料相談する</a>
 </section>
 
-<!-- ===== ABOUT ===== -->
-<section id="about" class="section fade-in">
+<section class="about fade-in">
   <h2>株式会社LOCLEとは</h2>
-  <p class="section-lead">
-    株式会社LOCLEは、群馬発のZ世代向けマーケティング会社です。<br>
+  <p>
+    株式会社LOCLEは、群馬発のZ世代向けマーケティング会社です。
     TikTokやInstagramなどのSNSを活用し、地方中小企業の採用支援やブランディングを行っています。
   </p>
   <p>
     若者目線での企画力と動画制作ノウハウを強みに、
     戦略設計から撮影・編集・運用までを一貫してサポート。
-    企業ごとの状況に寄り添いながら、
-    <strong>共に考え、共に走る「伴走型支援」</strong>を大切にしています。
+    企業に寄り添う<strong>伴走型支援</strong>を大切にしています。
   </p>
 </section>
 
-<!-- ===== SUPPORT ===== -->
-<section id="support" class="support">
+<section class="support">
   <h2>LOCLEの伴走型支援</h2>
-
   <div class="support-steps">
     <div class="support-step fade-in">
       <span class="step-number">01</span>
-      <h3>分からないを一緒に整理</h3>
-      <p>SNS未経験でもOK。課題と方向性を一緒に言語化します。</p>
+      <h3>ヒアリング・設計</h3>
+      <p>課題や採用状況を丁寧に整理します。</p>
     </div>
-
     <div class="support-step fade-in">
       <span class="step-number">02</span>
-      <h3>現場に入り込む運用</h3>
-      <p>企画・撮影・編集・投稿まで一貫対応。丸投げも可能です。</p>
+      <h3>企画・制作・運用</h3>
+      <p>Z世代に刺さる企画と動画制作。</p>
     </div>
-
     <div class="support-step fade-in">
       <span class="step-number">03</span>
-      <h3>数字で成果を実感</h3>
-      <p>再生数・応募数をもとに改善を続け、成果につなげます。</p>
+      <h3>改善・成果最大化</h3>
+      <p>応募数・採用力向上へ改善を継続。</p>
     </div>
   </div>
 </section>
 
-<!-- ===== WORKS ===== -->
-<section id="works" class="works">
-  <h2>実績・導入事例</h2>
+<section class="works">
+  <h2>実績</h2>
+  <div class="works-grid">
+    <a href="https://www.tiktok.com/@shinnitto.recruit" target="_blank" class="work-card fade-in">
+      <h3>新日東 様</h3>
+      <p>累計15万回再生<br>応募数 約3.2倍</p>
+    </a>
 
-  <div class="work-item fade-in">
-    <div class="work-text">
-      <h3>新日東 様（製造業｜群馬県）</h3>
-      <ul>
-        <li><strong>課題：</strong>若手採用の応募がほぼゼロ</li>
-        <li><strong>施策：</strong>SNS未経験の社員も出演するTikTok運用</li>
-        <li><strong>結果：</strong><span class="highlight">累計15万回再生／応募数3.2倍</span></li>
-      </ul>
+    <a href="https://www.tiktok.com/@masumoto.akitsu" target="_blank" class="work-card fade-in">
+      <h3>桝元 秋津店 様</h3>
+      <p>累計450万回再生<br>来店認知向上</p>
+    </a>
 
-      <!-- 追加：ガチ文章 -->
-      <p class="work-description">
-        採用広報を目的にTikTok運用を開始。
-        「仕事内容が分からない」「職場の雰囲気が見えない」という
-        若年層の不安を解消するため、
-        社員の日常やリアルな声をショート動画で発信しました。
-        <br><br>
-        結果として企業の雰囲気が可視化され、
-        TikTok経由での認知拡大と応募数増加を実現しました。
-      </p>
-    </div>
-
-    <!-- TikTok埋め込み -->
-    <div class="work-movie">
-      <blockquote class="tiktok-embed"
-        cite="https://www.tiktok.com/@shinnitto.recruit"
-        data-unique-id="shinnitto.recruit"
-        data-embed-type="creator">
-      </blockquote>
-    </div>
+    <a href="https://www.tiktok.com/@toyocareservice" target="_blank" class="work-card fade-in">
+      <h3>東洋ケアサービス 様</h3>
+      <p>累計740万回再生<br>応募数増加</p>
+    </a>
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
 <section id="contact" class="contact fade-in">
   <h2>お問い合わせ</h2>
-  <p>ご相談・お見積りは無料です。</p>
-
-  <!-- フォームURL本番用に差し替え -->
-  <form action="https://formspree.io/f/xxxxx" method="POST">
-    <input type="text" name="company" placeholder="会社名" required>
-    <input type="text" name="name" placeholder="お名前" required>
-    <input type="email" name="email" placeholder="メールアドレス" required>
-    <textarea name="message" placeholder="ご相談内容"></textarea>
-    <button type="submit">送信する</button>
-  </form>
+  <p>
+    SNS運用・採用広報について<br>
+    まずはお気軽にご相談ください。
+  </p>
+  <a href="https://docs.google.com/forms/" target="_blank" class="btn">
+    無料相談フォームへ
+  </a>
 </section>
 
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-  <p>© 2026 株式会社LOCLE</p>
-</footer>
-
-<!-- TikTok -->
-<script async src="https://www.tiktok.com/embed.js"></script>
-
-<!-- アニメーション -->
 <script>
   const targets = document.querySelectorAll('.fade-in');
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -158,6 +298,7 @@
       }
     });
   });
+
   targets.forEach(target => observer.observe(target));
 </script>
 
