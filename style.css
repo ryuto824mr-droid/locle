@@ -426,24 +426,79 @@ body {
   </div>
 </section>
 
-<section class="works">
-  <h2>実績</h2>
-  <div class="works-grid">
-    <a href="https://www.tiktok.com/@shinnitto.recruit" target="_blank" class="work-card fade-in">
-      <h3>新日東 様</h3>
-      <p>累計15万回再生<br>応募数 約3.2倍</p>
-    </a>
+<section id="works" class="works">
+  <h2>実績・導入事例</h2>
 
-    <a href="https://www.tiktok.com/@masumoto.akitsu" target="_blank" class="work-card fade-in">
-      <h3>桝元 秋津店 様</h3>
-      <p>累計450万回再生<br>来店認知向上</p>
-    </a>
+  <div class="work-item fade-in">
+    <div class="work-text">
+      <h3>新日東 様（製造業｜群馬県）</h3>
+      <ul>
+        <li><strong>課題：</strong>若手採用の応募がほぼゼロ</li>
+        <li><strong>施策：</strong>社員出演のTikTok動画を継続投稿</li>
+        <li><strong>結果：</strong><span class="highlight">累計15万回再生／応募数3.2倍</span></li>
+      </ul>
+      <p class="work-description">
+        仕事内容や職場の雰囲気が伝わらないことが応募不足の原因だったため、
+        社員の日常やリアルな声を短尺動画で発信。
+        若年層の認知が広がり、応募数増加につながりました。
+      </p>
+    </div>
 
-    <a href="https://www.tiktok.com/@toyocareservice" target="_blank" class="work-card fade-in">
-      <h3>東洋ケアサービス 様</h3>
-      <p>累計740万回再生<br>応募数増加</p>
-    </a>
+    <div class="work-movie">
+      <blockquote class="tiktok-embed"
+        cite="https://www.tiktok.com/@shinnitto.recruit"
+        data-unique-id="shinnitto.recruit"
+        data-embed-type="creator">
+      </blockquote>
+    </div>
   </div>
+
+  <div class="work-item fade-in">
+    <div class="work-text">
+      <h3>桝元 秋津店 様（飲食業）</h3>
+      <ul>
+        <li><strong>課題：</strong>SNSでの認知不足</li>
+        <li><strong>施策：</strong>来店導線を意識したTikTok企画</li>
+        <li><strong>結果：</strong><span class="highlight">累計450万回再生／来店認知向上</span></li>
+      </ul>
+      <p class="work-description">
+        メニューの魅力や店舗の雰囲気をテンポ良く発信。
+        地域外ユーザーにも届き、来店前の認知獲得に成功しました。
+      </p>
+    </div>
+
+    <div class="work-movie">
+      <blockquote class="tiktok-embed"
+        cite="https://www.tiktok.com/@masumoto.akitsu"
+        data-unique-id="masumoto.akitsu"
+        data-embed-type="creator">
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="work-item fade-in">
+    <div class="work-text">
+      <h3>東洋ケアサービス 様（介護）</h3>
+      <ul>
+        <li><strong>課題：</strong>応募数が伸びない</li>
+        <li><strong>施策：</strong>現場スタッフの声を動画化</li>
+        <li><strong>結果：</strong><span class="highlight">累計740万回再生／応募数増加</span></li>
+      </ul>
+      <p class="work-description">
+        働く人のリアルな姿ややりがいを発信し、
+        共感型コンテンツとして拡散。応募数増加につながりました。
+      </p>
+    </div>
+
+    <div class="work-movie">
+      <blockquote class="tiktok-embed"
+        cite="https://www.tiktok.com/@toyocareservice"
+        data-unique-id="toyocareservice"
+        data-embed-type="creator">
+      </blockquote>
+    </div>
+  </div>
+
 </section>
 
 <section id="contact" class="contact fade-in">
