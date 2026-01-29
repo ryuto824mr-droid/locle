@@ -473,3 +473,28 @@ body {
 
 </body>
 </html>
+.work-item {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 80px auto;
+  align-items: flex-start;
+}
+
+.work-text {
+  flex: 1;
+}
+
+.work-movie {
+  width: 360px;
+}
+
+@media screen and (max-width: 768px) {
+  .work-item {
+    flex-direction: column;
+  }
+
+  .work-movie {
+    width: 100%;
+  }
+}
