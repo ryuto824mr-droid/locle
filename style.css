@@ -1,65 +1,475 @@
-/* ===== ナビ ===== */
-.nav {
+:root {
+  --main-green: #2f7d6d;
+  --text-black: #111;
+  --bg-light: #f7f9f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text-black);
+  line-height: 1.7;
+  background: #fff;
+}
+
+/* ===== Header ===== */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 20px;
   display: flex;
-  gap: 24px;
+  justify-content: space-between;
   align-items: center;
 }
 
-.nav a {
-  font-size: 14px;
-  color: #111;
-}
-
-.nav-cta {
-  background: #44B13F;
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: 20px;
-  font-weight: 700;
-}
-
-/* ===== ロゴ hover ===== */
-header img {
+.logo img {
   height: 34px;
   transition: 0.3s ease;
 }
 
-header img:hover {
+.logo img:hover {
   opacity: 0.75;
 }
 
-/* ===== 実績 ===== */
-.work-item {
-  display: flex;
-  gap: 40px;
-  max-width: 1100px;
-  margin: 0 auto;
-  align-items: flex-start;
+.nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
 }
 
-.work-description {
-  margin-top: 16px;
-  font-size: 15px;
-  color: #555;
+.nav-btn {
+  color: var(--main-green);
 }
 
-.highlight {
-  color: #44B13F;
+/* ===== Hero ===== */
+.hero {
+  padding: 160px 20px 100px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
   font-weight: 700;
 }
 
-.work-movie {
-  max-width: 360px;
+.hero span {
+  color: var(--main-green);
 }
 
-/* ===== アニメーション ===== */
-.fade-in {
+.hero p {
+  margin-top: 20px;
+  color: #555;
+}
+
+/* ===== Section ===== */
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.bg-light {
+  background: var(--bg-light);
+}
+
+/* ===== About ===== */
+.about-text {
+  color: #444;
+}
+
+/* ===== Steps ===== */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.step-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  border-left: 4px solid var(--main-green);
+}
+
+/* ===== Works ===== */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.work-card {
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  transition: 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--main-green);
+}
+
+/* ===== Contact ===== */
+.contact-text {
+  margin-bottom: 32px;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--main-green);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* ===== Animation ===== */
+.fade-up {
   opacity: 0;
   transform: translateY(30px);
   transition: 0.8s ease;
 }
 
-.fade-in.active {
+.fade-up.active {
   opacity: 1;
   transform: translateY(0);
 }
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>株式会社LOCLE｜群馬発SNSマーケティング支援</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== 基本 ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: #111;
+      background: #fff;
+      line-height: 1.8;
+    }
+
+    section {
+      padding: 100px 20px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: #555;
+      font-size: 16px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== ヘッダー ===== */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 34px;
+      transition: 0.3s ease;
+    }
+
+    header img:hover {
+      opacity: 0.75;
+    }
+
+    /* ===== ヒーロー ===== */
+    .hero {
+      padding-top: 160px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      margin-bottom: 24px;
+    }
+
+    .hero span {
+      color: #44B13F;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 36px;
+      background: #44B13F;
+      color: #fff;
+      border-radius: 40px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    /* ===== About ===== */
+    .about {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .about p {
+      margin-bottom: 20px;
+    }
+
+    /* ===== 伴走型 ===== */
+    .support {
+      background: #fafafa;
+    }
+
+    .support-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .support-step {
+      background: #fff;
+      padding: 32px;
+      border-radius: 20px;
+      border: 1px solid #eee;
+    }
+
+    .step-number {
+      color: #44B13F;
+      font-weight: 700;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* ===== 実績 ===== */
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .work-card {
+      border: 1px solid #eee;
+      padding: 28px;
+      border-radius: 18px;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    .work-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .work-card::after {
+      content: "TikTok";
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-size: 12px;
+      color: #44B13F;
+      font-weight: 700;
+    }
+
+    /* ===== Contact ===== */
+    .contact {
+      text-align: center;
+      background: #fafafa;
+    }
+
+    .contact p {
+      margin-bottom: 30px;
+    }
+
+    /* ===== アニメーション ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.8s ease;
+    }
+
+    .fade-in.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <img src="img/locle-logo.png" alt="株式会社LOCLE ロゴ">
+  </div>
+</header>
+
+<section class="hero fade-in">
+  <h1>地方企業の魅力を<br><span>SNSで、選ばれる理由に。</span></h1>
+  <p>
+    群馬発、Z世代視点のSNSマーケティングで<br>
+    採用とブランディングを支援します。
+  </p>
+  <a href="#contact" class="btn">無料相談する</a>
+</section>
+
+<section class="about fade-in">
+  <h2>株式会社LOCLEとは</h2>
+  <p>
+    株式会社LOCLEは、群馬発のZ世代向けマーケティング会社です。
+    TikTokやInstagramなどのSNSを活用し、地方中小企業の採用支援やブランディングを行っています。
+  </p>
+  <p>
+    若者目線での企画力と動画制作ノウハウを強みに、
+    戦略設計から撮影・編集・運用までを一貫してサポート。
+    企業に寄り添う<strong>伴走型支援</strong>を大切にしています。
+  </p>
+</section>
+
+<section class="support">
+  <h2>LOCLEの伴走型支援</h2>
+  <div class="support-steps">
+    <div class="support-step fade-in">
+      <span class="step-number">01</span>
+      <h3>ヒアリング・設計</h3>
+      <p>課題や採用状況を丁寧に整理します。</p>
+    </div>
+    <div class="support-step fade-in">
+      <span class="step-number">02</span>
+      <h3>企画・制作・運用</h3>
+      <p>Z世代に刺さる企画と動画制作。</p>
+    </div>
+    <div class="support-step fade-in">
+      <span class="step-number">03</span>
+      <h3>改善・成果最大化</h3>
+      <p>応募数・採用力向上へ改善を継続。</p>
+    </div>
+  </div>
+</section>
+
+<section class="works">
+  <h2>実績</h2>
+  <div class="works-grid">
+    <a href="https://www.tiktok.com/@shinnitto.recruit" target="_blank" class="work-card fade-in">
+      <h3>新日東 様</h3>
+      <p>累計15万回再生<br>応募数 約3.2倍</p>
+    </a>
+
+    <a href="https://www.tiktok.com/@masumoto.akitsu" target="_blank" class="work-card fade-in">
+      <h3>桝元 秋津店 様</h3>
+      <p>累計450万回再生<br>来店認知向上</p>
+    </a>
+
+    <a href="https://www.tiktok.com/@toyocareservice" target="_blank" class="work-card fade-in">
+      <h3>東洋ケアサービス 様</h3>
+      <p>累計740万回再生<br>応募数増加</p>
+    </a>
+  </div>
+</section>
+
+<section id="contact" class="contact fade-in">
+  <h2>お問い合わせ</h2>
+  <p>
+    SNS運用・採用広報について<br>
+    まずはお気軽にご相談ください。
+  </p>
+  <a href="https://docs.google.com/forms/" target="_blank" class="btn">
+    無料相談フォームへ
+  </a>
+</section>
+
+<script>
+  const targets = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  });
+
+  targets.forEach(target => observer.observe(target));
+</script>
+
+</body>
+</html>
