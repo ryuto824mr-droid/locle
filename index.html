@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
-<header>
-  <img src="img/locle-logo.png" alt="株式会社LOCLE ロゴ">
-</header>
+<head>
   <meta charset="UTF-8" />
-  <title>株式会社LOCLE｜SNS運用代行</title>
+  <title>株式会社LOCLE｜群馬発SNSマーケティング支援</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
   <style>
-    :root {
-      --black: #111;
-      --green-main: #44B13F;
-      --green-light: #AACF45;
-      --gray: #666;
-      --bg: #fff;
-    }
-
+    /* ===== 基本 ===== */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -26,10 +17,29 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--black);
-      line-height: 1.75;
+      font-family: 'Noto Sans JP', sans-serif;
+      color: #111;
+      background: #fff;
+      line-height: 1.8;
+    }
+
+    section {
+      padding: 100px 20px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: #555;
+      font-size: 16px;
     }
 
     a {
@@ -37,182 +47,161 @@
       color: inherit;
     }
 
-    section {
-      padding: 120px 8%;
-    }
-
-    h2 {
-      font-size: 38px;
-      font-weight: 700;
-      margin-bottom: 48px;
-      letter-spacing: -0.02em;
-    }
-
-    /* ===== header ===== */
+    /* ===== ヘッダー ===== */
     header {
-      padding: 24px 8%;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px 20px;
       display: flex;
       align-items: center;
-      border-bottom: 1px solid #eee;
+      justify-content: space-between;
     }
 
     header img {
-      height: 36px;
+      height: 34px;
+      transition: 0.3s ease;
     }
 
-    /* ===== hero ===== */
+    header img:hover {
+      opacity: 0.75;
+    }
+
+    /* ===== ヒーロー ===== */
     .hero {
-      padding: 140px 8% 160px;
+      padding-top: 160px;
+      text-align: center;
     }
 
     .hero h1 {
-      font-size: 58px;
-      line-height: 1.2;
-      margin-bottom: 32px;
+      font-size: 44px;
+      margin-bottom: 24px;
     }
 
     .hero span {
-      color: var(--green-main);
+      color: #44B13F;
     }
 
     .hero p {
       max-width: 720px;
-      font-size: 18px;
-      color: var(--gray);
+      margin: 0 auto 40px;
     }
 
-    /* ===== works ===== */
-    .works-grid {
+    .btn {
+      display: inline-block;
+      padding: 16px 36px;
+      background: #44B13F;
+      color: #fff;
+      border-radius: 40px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    /* ===== About ===== */
+    .about {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .about p {
+      margin-bottom: 20px;
+    }
+
+    /* ===== 伴走型 ===== */
+    .support {
+      background: #fafafa;
+    }
+
+    .support-steps {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 36px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
     }
 
-    .work-card {
+    .support-step {
+      background: #fff;
       padding: 32px;
       border-radius: 20px;
       border: 1px solid #eee;
-      background: #fff;
-      transition: 0.4s ease;
-      position: relative;
-      opacity: 0;
-      transform: translateY(40px);
     }
 
-    .work-card.active {
-      opacity: 1;
-      transform: translateY(0);
+    .step-number {
+      color: #44B13F;
+      font-weight: 700;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* ===== 実績 ===== */
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .work-card {
+      border: 1px solid #eee;
+      padding: 28px;
+      border-radius: 18px;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    .work-card:hover {
+      transform: translateY(-6px);
     }
 
     .work-card::after {
       content: "TikTok";
       position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 11px;
-      font-weight: 600;
-      background: linear-gradient(135deg, var(--green-main), var(--green-light));
-      color: #fff;
-      padding: 6px 10px;
-      border-radius: 999px;
-    }
-
-    .work-card:hover {
-      transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 24px 50px rgba(0,0,0,0.08);
-    }
-
-    .work-card h3 {
-      font-size: 22px;
-      margin-bottom: 14px;
-    }
-
-    .work-card p {
-      color: var(--gray);
-      font-size: 15px;
-    }
-
-    /* ===== steps ===== */
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 48px;
-    }
-
-    .step {
-      padding-left: 12px;
-      border-left: 3px solid var(--green-main);
-      opacity: 0;
-      transform: translateY(40px);
-      transition: 0.6s ease;
-    }
-
-    .step.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .step span {
-      font-size: 13px;
+      top: 16px;
+      right: 16px;
+      font-size: 12px;
+      color: #44B13F;
       font-weight: 700;
-      color: var(--green-main);
     }
 
-    .step h3 {
-      font-size: 24px;
-      margin: 10px 0 12px;
-    }
-
-    .step p {
-      color: var(--gray);
-      font-size: 15px;
-    }
-
-    /* ===== contact ===== */
-    .contact-wrap {
-      background: linear-gradient(
-        135deg,
-        rgba(68,177,63,0.08),
-        rgba(170,207,69,0.08)
-      );
-      border-radius: 36px;
-      padding: 96px 8%;
+    /* ===== Contact ===== */
+    .contact {
       text-align: center;
+      background: #fafafa;
+    }
+
+    .contact p {
+      margin-bottom: 30px;
+    }
+
+    /* ===== アニメーション ===== */
+    .fade-in {
       opacity: 0;
-      transform: translateY(60px);
+      transform: translateY(30px);
       transition: 0.8s ease;
     }
 
-    .contact-wrap.active {
+    .fade-in.active {
       opacity: 1;
       transform: translateY(0);
     }
 
-    .contact-wrap p {
-      color: var(--gray);
-      margin-bottom: 32px;
-    }
-
-    .contact-wrap a {
-      display: inline-block;
-      padding: 18px 40px;
-      border-radius: 999px;
-      background: var(--black);
-      color: #fff;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    .contact-wrap a:hover {
-      background: var(--green-main);
-    }
-
-    /* ===== footer ===== */
-    footer {
-      padding: 48px 8%;
-      text-align: center;
-      font-size: 14px;
-      color: #999;
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -220,79 +209,87 @@
 <body>
 
 <header>
-  <img src="img/locle-logo.png" alt="LOCLE">
+  <div class="header-inner">
+    <img src="img/locle-logo.png" alt="株式会社LOCLE ロゴ">
+  </div>
 </header>
 
-<section class="hero">
-  <h1>
-    地方企業の魅力を<br>
-    <span>SNSで、選ばれる理由に。</span>
-  </h1>
+<section class="hero fade-in">
+  <h1>地方企業の魅力を<br><span>SNSで、選ばれる理由に。</span></h1>
   <p>
-    株式会社LOCLEは、群馬を拠点にTikTok・Instagramを中心とした
-    SNS運用代行・採用広報支援を行うマーケティング会社です。
+    群馬発、Z世代視点のSNSマーケティングで<br>
+    採用とブランディングを支援します。
+  </p>
+  <a href="#contact" class="btn">無料相談する</a>
+</section>
+
+<section class="about fade-in">
+  <h2>株式会社LOCLEとは</h2>
+  <p>
+    株式会社LOCLEは、群馬発のZ世代向けマーケティング会社です。
+    TikTokやInstagramなどのSNSを活用し、地方中小企業の採用支援やブランディングを行っています。
+  </p>
+  <p>
+    若者目線での企画力と動画制作ノウハウを強みに、
+    戦略設計から撮影・編集・運用までを一貫してサポート。
+    企業に寄り添う<strong>伴走型支援</strong>を大切にしています。
   </p>
 </section>
 
-<section>
+<section class="support">
+  <h2>LOCLEの伴走型支援</h2>
+  <div class="support-steps">
+    <div class="support-step fade-in">
+      <span class="step-number">01</span>
+      <h3>ヒアリング・設計</h3>
+      <p>課題や採用状況を丁寧に整理します。</p>
+    </div>
+    <div class="support-step fade-in">
+      <span class="step-number">02</span>
+      <h3>企画・制作・運用</h3>
+      <p>Z世代に刺さる企画と動画制作。</p>
+    </div>
+    <div class="support-step fade-in">
+      <span class="step-number">03</span>
+      <h3>改善・成果最大化</h3>
+      <p>応募数・採用力向上へ改善を継続。</p>
+    </div>
+  </div>
+</section>
+
+<section class="works">
   <h2>実績</h2>
   <div class="works-grid">
-    <a href="https://www.tiktok.com/@shinnitto.recruit" target="_blank" class="work-card">
-      <h3>新日東</h3>
-      <p>累計再生数15万回超<br>採用応募数3.2倍</p>
+    <a href="https://www.tiktok.com/@shinnitto.recruit" target="_blank" class="work-card fade-in">
+      <h3>新日東 様</h3>
+      <p>累計15万回再生<br>応募数 約3.2倍</p>
     </a>
 
-    <a href="https://www.tiktok.com/@masumoto.akitsu" target="_blank" class="work-card">
-      <h3>桝元 秋津店</h3>
-      <p>1動画10万回再生達成<br>20代来店比率増加</p>
+    <a href="https://www.tiktok.com/@masumoto.akitsu" target="_blank" class="work-card fade-in">
+      <h3>桝元 秋津店 様</h3>
+      <p>累計450万回再生<br>来店認知向上</p>
     </a>
 
-    <a href="https://www.tiktok.com/@toyocareservice" target="_blank" class="work-card">
-      <h3>東洋ケアサービス</h3>
-      <p>フォロワー700人突破<br>保存率・応募率向上</p>
-    </a>
-  </div>
-</section>
-
-<section>
-  <h2>なぜLOCLEが選ばれるのか</h2>
-  <div class="steps">
-    <div class="step">
-      <span>STEP 01</span>
-      <h3>若者視点の企画</h3>
-      <p>現役世代の感覚を活かしたSNS設計。</p>
-    </div>
-    <div class="step">
-      <span>STEP 02</span>
-      <h3>成果に直結</h3>
-      <p>再生数だけで終わらせない導線。</p>
-    </div>
-    <div class="step">
-      <span>STEP 03</span>
-      <h3>地方特化</h3>
-      <p>地域企業の魅力を最大化。</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="contact-wrap">
-    <h2>お問い合わせ</h2>
-    <p>SNS運用・採用広報のご相談はこちら</p>
-    <a href="https://forms.gle/XXXXXXXX" target="_blank">
-      Googleフォームで問い合わせる
+    <a href="https://www.tiktok.com/@toyocareservice" target="_blank" class="work-card fade-in">
+      <h3>東洋ケアサービス 様</h3>
+      <p>累計740万回再生<br>応募数増加</p>
     </a>
   </div>
 </section>
 
-<footer>
-  © 株式会社LOCLE
-</footer>
+<section id="contact" class="contact fade-in">
+  <h2>お問い合わせ</h2>
+  <p>
+    SNS運用・採用広報について<br>
+    まずはお気軽にご相談ください。
+  </p>
+  <a href="https://docs.google.com/forms/" target="_blank" class="btn">
+    無料相談フォームへ
+  </a>
+</section>
 
 <script>
-  const targets = document.querySelectorAll(
-    '.work-card, .step, .contact-wrap'
-  );
+  const targets = document.querySelectorAll('.fade-in');
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -300,9 +297,9 @@
         entry.target.classList.add('active');
       }
     });
-  }, { threshold: 0.25 });
+  });
 
-  targets.forEach(el => observer.observe(el));
+  targets.forEach(target => observer.observe(target));
 </script>
 
 </body>
