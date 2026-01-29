@@ -1,147 +1,169 @@
+:root {
+  --main-green: #2f7d6d;
+  --text-black: #111;
+  --bg-light: #f7f9f8;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 body {
-  background: #0b0b0f;
-  color: #fff;
+  font-family: "Inter", sans-serif;
+  color: var(--text-black);
+  line-height: 1.7;
+  background: #fff;
 }
 
-/* HERO */
-.hero {
-  height: 100vh;
+/* ===== Header ===== */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 20px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(-45deg,#000,#ff2f92,#36e0ff,#000);
-  background-size: 400% 400%;
-  animation: bgMove 12s infinite;
 }
 
-@keyframes bgMove {
-  0% {background-position:0% 50%;}
-  50% {background-position:100% 50%;}
-  100% {background-position:0% 50%;}
+.logo img {
+  height: 34px;
+  transition: 0.3s ease;
 }
 
-.hero-inner {
+.logo img:hover {
+  opacity: 0.75;
+}
+
+.nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.nav-btn {
+  color: var(--main-green);
+}
+
+/* ===== Hero ===== */
+.hero {
+  padding: 160px 20px 100px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 42px;
+  font-weight: 700;
 }
 
-/* WHY */
-.why {
-  padding: 120px 20px;
-  text-align: center;
+.hero span {
+  color: var(--main-green);
 }
 
-.why-grid {
-  margin-top: 60px;
+.hero p {
+  margin-top: 20px;
+  color: #555;
+}
+
+/* ===== Section ===== */
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.bg-light {
+  background: var(--bg-light);
+}
+
+/* ===== About ===== */
+.about-text {
+  color: #444;
+}
+
+/* ===== Steps ===== */
+.steps {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
 }
 
-.why-card {
-  background: rgba(255,255,255,0.05);
-  padding: 40px;
-  border-radius: 20px;
+.step-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  border-left: 4px solid var(--main-green);
 }
 
-/* ACHIEVEMENTS */
-.achievements {
-  padding: 120px 20px;
-}
-
-.card-grid {
+/* ===== Works ===== */
+.works-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
 }
 
-.card {
-  background: rgba(255,255,255,0.08);
-  padding: 30px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: transform .3s;
+.work-card {
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  transition: 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-8px);
+.work-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--main-green);
 }
 
-.tiktok {
-  font-size: .7rem;
-  padding: 4px 10px;
-  background: #000;
-  border: 1px solid #ff2f92;
-  border-radius: 20px;
+/* ===== Contact ===== */
+.contact-text {
+  margin-bottom: 32px;
 }
 
-/* CONTACT */
-.contact {
-  padding: 140px 20px;
+.contact-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--main-green);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+}
+
+/* ===== Footer ===== */
+.footer {
   text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+  color: #777;
 }
 
-.contact-box {
-  max-width: 420px;
-  margin: 40px auto 0;
-  padding: 40px;
-  background: rgba(255,255,255,0.06);
-  border-radius: 20px;
-}
-
-.contact-box span {
-  font-size: .7rem;
-  opacity: .6;
-}
-
-.contact-box a {
-  color: #36e0ff;
-}
-
-/* MODAL */
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.8);
-}
-
-.modal-content {
-  background: #111;
-  max-width: 400px;
-  margin: 15% auto;
-  padding: 30px;
-  border-radius: 16px;
-}
-
-.close {
-  float: right;
-  cursor: pointer;
-}
-
-/* ANIMATION */
-.fade, .fade-up {
+/* ===== Animation ===== */
+.fade-up {
   opacity: 0;
-  transform: translateY(40px);
-  transition: 1s;
+  transform: translateY(30px);
+  transition: 0.8s ease;
 }
 
-.show {
+.fade-up.active {
   opacity: 1;
   transform: translateY(0);
 }
-
-.footer {
-  text-align: center;
-  padding: 40px;
-  opacity: .6;
