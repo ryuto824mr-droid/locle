@@ -372,6 +372,54 @@ body {
     html {
       scroll-behavior: smooth;
     }
+/* ===== Contact Form ===== */
+.contact {
+  background: #fafafa;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.form-group label span {
+  color: #44B13F;
+  margin-left: 4px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #44B13F;
+}
+
+.contact-form .btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
   </style>
 </head>
 
