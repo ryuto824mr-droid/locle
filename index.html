@@ -297,13 +297,45 @@ F<!DOCTYPE html>
 <section id="contact" class="contact fade-in">
   <h2>お問い合わせ</h2>
   <p>
-    SNS運用・採用広報について<br>
-    まずはお気軽にご相談ください。
+    SNS運用・採用広報に関するご相談は、<br>
+    下記フォームよりお気軽にお問い合わせください。
   </p>
-  <a href="https://docs.google.com/forms/" target="_blank" class="btn">
-    無料相談フォームへ
-  </a>
+
+  <form class="contact-form">
+    <div class="form-group">
+      <label>貴社名<span>*</span></label>
+      <input type="text" name="company" required>
+    </div>
+
+    <div class="form-group">
+      <label>業種<span>*</span></label>
+      <input type="text" name="industry" required>
+    </div>
+
+    <div class="form-group">
+      <label>担当者名<span>*</span></label>
+      <input type="text" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label>電話番号<span>*</span></label>
+      <input type="tel" name="tel" required>
+    </div>
+
+    <div class="form-group">
+      <label>メールアドレス<span>*</span></label>
+      <input type="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label>ご相談・ご質問内容（任意）</label>
+      <textarea name="message" rows="5"></textarea>
+    </div>
+
+    <button type="submit" class="btn">送信する</button>
+  </form>
 </section>
+
 
 <script>
   const targets = document.querySelectorAll('.fade-in');
