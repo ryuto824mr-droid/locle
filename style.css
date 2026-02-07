@@ -372,53 +372,70 @@ body {
     html {
       scroll-behavior: smooth;
     }
-/* ===== Contact Form ===== */
+/* ===== Contact 洗練デザイン ===== */
 .contact {
   background: #fafafa;
 }
 
-.contact-form {
-  max-width: 600px;
+.contact-inner {
+  max-width: 720px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.contact-lead {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 48px;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 48px 40px;
+  border-radius: 24px;
+  border: 1px solid #eee;
   text-align: left;
 }
 
 .form-group {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .form-group label {
   display: block;
   font-size: 14px;
-  margin-bottom: 6px;
+  font-weight: 500;
+  margin-bottom: 8px;
   color: #111;
 }
 
 .form-group label span {
+  font-size: 12px;
   color: #44B13F;
-  margin-left: 4px;
+  margin-left: 6px;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 14px 16px;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px solid #ddd;
   font-size: 15px;
-  font-family: 'Noto Sans JP', sans-serif;
+  background: #fafafa;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
+  background: #fff;
   border-color: #44B13F;
 }
 
 .contact-form .btn {
   width: 100%;
-  text-align: center;
-  margin-top: 20px;
+  margin-top: 16px;
+  font-size: 16px;
 }
   </style>
 </head>
