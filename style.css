@@ -372,70 +372,89 @@ body {
     html {
       scroll-behavior: smooth;
     }
-/* ===== Contact 洗練デザイン ===== */
+/* ===== Contact 強化デザイン ===== */
 .contact {
-  background: #fafafa;
+  background: linear-gradient(180deg, #f9faf9 0%, #ffffff 100%);
 }
 
-.contact-inner {
-  max-width: 720px;
+.contact-wrapper {
+  max-width: 760px;
   margin: 0 auto;
+  padding: 0 20px;
   text-align: center;
 }
 
 .contact-lead {
   font-size: 15px;
   color: #666;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 
 .contact-form {
   background: #fff;
-  padding: 48px 40px;
-  border-radius: 24px;
-  border: 1px solid #eee;
+  padding: 56px 48px;
+  border-radius: 28px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
   text-align: left;
 }
 
-.form-group {
-  margin-bottom: 28px;
+/* 入力項目 */
+.form-item {
+  margin-bottom: 32px;
 }
 
-.form-group label {
-  display: block;
+.form-item label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
   font-weight: 500;
-  margin-bottom: 8px;
-  color: #111;
+  margin-bottom: 10px;
 }
 
-.form-group label span {
-  font-size: 12px;
-  color: #44B13F;
-  margin-left: 6px;
+/* 必須・任意タグ */
+.required,
+.optional {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
 }
 
-.form-group input,
-.form-group textarea {
+.required {
+  background: #e54848;
+  color: #fff;
+}
+
+.optional {
+  background: #ccc;
+  color: #333;
+}
+
+/* 入力欄 */
+.form-item input,
+.form-item textarea {
   width: 100%;
-  padding: 14px 16px;
-  border-radius: 12px;
-  border: 1px solid #ddd;
+  padding: 16px 18px;
   font-size: 15px;
-  background: #fafafa;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  transition: 0.2s;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-item input:focus,
+.form-item textarea:focus {
   outline: none;
-  background: #fff;
   border-color: #44B13F;
+  background: #fff;
 }
 
-.contact-form .btn {
+/* 送信ボタン */
+.submit-btn {
   width: 100%;
   margin-top: 16px;
   font-size: 16px;
+  letter-spacing: 0.05em;
 }
   </style>
 </head>
