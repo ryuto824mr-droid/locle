@@ -338,3 +338,20 @@ style.css
   gap: 32px;
   justify-items: center;
 }
+/* ===== Button ===== */
+.btn {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 14px 36px;
+  background: var(--main-green);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
