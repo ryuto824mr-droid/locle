@@ -187,18 +187,17 @@ F<!DOCTYPE html>
 
 
 <script>
-  const targets = document.querySelectorAll('.fade-in');
+  const header = document.querySelector("header");
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      }
-    });
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 20) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
   });
-
-  targets.forEach(target => observer.observe(target));
 </script>
+
 
 </body>
 </html>
