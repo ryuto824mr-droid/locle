@@ -459,5 +459,7 @@ body {
   }
 }
 .fade-up {
+  opacity: 0;
+  transform: translateY(30px);
   animation: fadeUp 0.8s ease-out forwards;
 }
