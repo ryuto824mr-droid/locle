@@ -255,3 +255,23 @@ section {
 section h2 {
   text-align: center;
 }
+
+.contact h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+  position: relative;
+  display: inline-block;
+}
+
+.contact h2::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: var(--main-green);
+  margin: 12px auto 0;
+  border-radius: 999px;
+}
+
