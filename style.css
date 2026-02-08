@@ -152,10 +152,10 @@ body {
 
 /* ===== Animation ===== */
 .fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: 0.8s ease;
+  opacity: 1;
+  transform: none;
 }
+
 
 .fade-in.active {
   opacity: 1;
