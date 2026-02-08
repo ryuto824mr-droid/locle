@@ -198,6 +198,21 @@
   });
 </script>
 
+<script>
+  const fadeItems = document.querySelectorAll(".fade-in");
+
+  const onScroll = () => {
+    fadeItems.forEach(item => {
+      const rect = item.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        item.classList.add("active");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", onScroll);
+  window.addEventListener("load", onScroll);
+</script>
 
 </body>
 </html>
