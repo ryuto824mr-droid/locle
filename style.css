@@ -14,6 +14,7 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   color: var(--text-main);
   line-height: 1.7;
+  padding-top: 72px; /* ← 追加 */
 }
 
 
