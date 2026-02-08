@@ -171,17 +171,27 @@ body {
   }
 }
 
+/* ===== 必須・任意バッジ ===== */
+.required,
+.optional {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 999px;
+  color: #fff;
+  vertical-align: middle;
+}
+
 .required {
-  color: #e11d48;
-  font-size: 12px;
-  margin-left: 6px;
+  background: #e11d48;
 }
 
 .optional {
-  color: #888;
-  font-size: 12px;
-  margin-left: 6px;
+  background: #64748b;
 }
+
 
 .contact-wrapper {
   max-width: 720px;
@@ -275,3 +285,16 @@ section h2 {
   border-radius: 999px;
 }
 
+/* ===== フォーム入力強化 ===== */
+.form-item input,
+.form-item textarea {
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-item input:focus,
+.form-item textarea:focus {
+  border-color: var(--main-green);
+  box-shadow: 0 0 0 3px rgba(68, 177, 63, 0.15);
+}
