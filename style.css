@@ -198,6 +198,15 @@ body {
   margin: 0 auto;
 }
 
+/* ===== お問い合わせフォーム：カード化 ===== */
+.contact-wrapper {
+  background: #ffffff;
+  padding: 48px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -311,4 +320,9 @@ section h2 {
 .form-item textarea:focus {
   border-color: var(--main-green);
   box-shadow: 0 0 0 3px rgba(68, 177, 63, 0.15);
+}
+
+/* ===== お問い合わせ背景 ===== */
+.contact {
+  background: #f8fafc;
 }
