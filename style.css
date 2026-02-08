@@ -627,6 +627,13 @@ style.css
 .nav-btn::after {
   display: none;
 }
+
+/* ===== Header scroll shadow ===== */
+header.scrolled {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+
 /* ===== Media Page ===== */
 .media-hero {
   padding: 200px 20px 120px;
