@@ -12,9 +12,9 @@
 
 body {
   font-family: "Inter", sans-serif;
-  color: var(--text-black);
-  line-height: 1.7;
-  background: #fff;
+  color: var(--main-green);
+background: var(--bg-light);
+
 }
 
 /* ===== Header ===== */
