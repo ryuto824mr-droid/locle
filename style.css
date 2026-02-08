@@ -458,3 +458,6 @@ body {
     transform: translateY(0);
   }
 }
+.fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+}
