@@ -385,3 +385,8 @@ section h2 {
   font-weight: 700;
   color: var(--main-green);
 }
+
+.hero {
+  opacity: 1 !important;
+  transform: none !important;
+}
