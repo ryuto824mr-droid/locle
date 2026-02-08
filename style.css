@@ -97,6 +97,10 @@ body {
   transform: translateY(-1px);
 }
 
+.header.scrolled {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
 
 /* ===== Hero ===== */
 .hero {
