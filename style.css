@@ -355,3 +355,33 @@ style.css
   opacity: 0.85;
   transform: translateY(-2px);
 }
+section {
+  padding: 100px 20px;
+}
+
+section h2 {
+  text-align: center;
+}
+/* ===== Support ===== */
+.support-steps {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+.support-step {
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #eee;
+}
+
+.step-number {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--main-green);
+}
