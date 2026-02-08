@@ -152,14 +152,13 @@ body {
 
 /* ===== Animation ===== */
 .fade-in {
-  opacity: 1;
-  transform: none;
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 
 .fade-in.active {
-  opacity: 1;
-  transform: translateY(0);
+  animation: fadeup 0.8s ease-out forwards;
 }
 
 index.html
@@ -386,11 +385,6 @@ section h2 {
   color: var(--main-green);
 }
 
-.hero {
-  opacity: 1 !important;
-  transform: none !important;
-}
-
 .contact-wrapper {
   max-width: 720px;
   margin: 0 auto;
@@ -457,9 +451,4 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 0.8s ease-out forwards;
 }
