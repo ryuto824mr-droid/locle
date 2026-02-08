@@ -712,3 +712,12 @@ header.scrolled {
   color: #44B13F;
   border-radius: 999px;
 }
+
+/* ===== TikTok Videos ===== */
+.media-videos {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  justify-items: center;
+}
