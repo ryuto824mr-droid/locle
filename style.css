@@ -561,3 +561,42 @@ index.html
 Update index.html
 14 minutes ago
 style.css
+
+/* ===== 自社メディア紹介 ===== */
+.media-highlight {
+  background: #f7f9fc;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.media-highlight h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.media-sub {
+  font-size: 16px;
+  font-weight: 500;
+  color: #3b82f6;
+  margin-bottom: 24px;
+}
+
+.media-text {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #333;
+}
+
+.media-text strong {
+  background: linear-gradient(transparent 60%, #dbeafe 60%);
+  font-weight: 700;
+}
+
+.media-btn {
+  padding: 14px 36px;
+  font-size: 16px;
+}
+
