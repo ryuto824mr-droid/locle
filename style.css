@@ -511,3 +511,8 @@ section {
     grid-template-columns: 1fr;
   }
 }
+: 900px) {
+  .media-features {
+    grid-template-columns: 1fr;
+  }
+}
