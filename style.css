@@ -497,3 +497,17 @@ section {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
+
+.media-features {
+  max-width: 1100px;
+  margin: 48px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 900px) {
+  .media-features {
+    grid-template-columns: 1fr;
+  }
+}
