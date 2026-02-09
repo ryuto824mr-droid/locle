@@ -182,5 +182,20 @@
   <a href="index.html#contact" class="btn">相談してみる</a>
 </section>
 
+<script>
+  const targets = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  });
+
+  targets.forEach(el => observer.observe(el));
+</script>
+
+  
 </body>
 </html>
