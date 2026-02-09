@@ -131,6 +131,17 @@ body {
   color: #555;
 }
 
+.hero {
+  background: linear-gradient(
+    135deg,
+    #e8f5e9 0%,
+    #ffffff 70%
+  );
+  padding: 120px 20px;
+  text-align: center;
+}
+
+
 /* ===== Section ===== */
 
 
