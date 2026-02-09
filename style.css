@@ -693,3 +693,30 @@ section {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.18);
 }
+
+/* ===== 実際の投稿事例：横並び ===== */
+.media-works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.media-works .tiktok-embed {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-works .tiktok-embed:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+@media screen and (max-width: 768px) {
+  .media-works {
+    grid-template-columns: 1fr;
+  }
+}
