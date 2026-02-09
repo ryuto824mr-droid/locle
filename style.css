@@ -483,19 +483,19 @@ section {
   margin: 0 auto;
 }
 
-/* ===== 共通カード ===== */
+/* ===== 共通カードデザイン ===== */
 .card {
   background: #fff;
   padding: 32px;
   border-radius: 16px;
   border: 1px solid #eee;
-  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
   transition: 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.1);
 }
 
 .media-features {
