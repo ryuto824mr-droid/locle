@@ -663,3 +663,16 @@ section {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
+
+.tiktok-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tiktok-embed {
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  overflow: hidden;
+}
