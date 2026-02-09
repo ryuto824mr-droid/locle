@@ -683,3 +683,13 @@ section {
   margin-bottom: 32px;
   font-size: 0.95rem;
 }
+
+/* ===== TikTok 埋め込み hover演出 ===== */
+.tiktok-embed {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tiktok-embed:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
