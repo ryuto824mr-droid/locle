@@ -14,9 +14,17 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   color: var(--text-main);
   line-height: 1.7;
-  padding-top: 72px; /* ← 追加 */
+  padding-top: 72px;
   text-align: center;
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f6f9f7 40%,
+      #ffffff 100%
+    );
 }
+
 
 
 /* ===== Header ===== */
@@ -132,8 +140,14 @@ body {
 }
 
 .bg-light {
-  background: var(--bg-light);
+  background:
+    linear-gradient(
+      180deg,
+      #f8fafc 0%,
+      #f1f5f2 100%
+    );
 }
+
 
 /* ===== About ===== */
 
@@ -557,15 +571,6 @@ section {
   color: #444;
 }
 
-section h2::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: var(--main-green);
-  margin-top: 12px;
-  opacity: 0.8;
-}
 
 /* ===== media-section 見出し下線 ===== */
 .media-section h2 {
@@ -573,12 +578,23 @@ section h2::after {
   display: inline-block;
 }
 
+/* ===== 見出しルール（最終・統一版） ===== */
+.media-section h2 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin-bottom: 32px;
+  position: relative;
+  display: inline-block;
+}
+
+/* 見出し下の緑線（文字幅に合わせる） */
 .media-section h2::after {
   content: "";
   display: block;
-  width: 100%;        /* ← 文字幅に合わせる核心 */
+  width: 100%;
   height: 3px;
   background: var(--main-green);
   margin: 16px auto 0;
-  border-radius: 2px;
+  border-radius: 999px;
 }
