@@ -466,3 +466,8 @@ section h2 {
   font-weight: 700;
   color: var(--main-green);
 }
+
+.media-section h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
