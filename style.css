@@ -15,6 +15,7 @@ body {
   color: var(--text-main);
   line-height: 1.7;
   padding-top: 72px; /* ← 追加 */
+  text-align: center;
 }
 
 
@@ -305,9 +306,7 @@ body {
   transform: translateY(-2px);
 }
 
-body {
-  text-align: center;
-}
+
 
 .btn {
   display: inline-block;
