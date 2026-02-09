@@ -566,3 +566,19 @@ section h2::after {
   margin-top: 12px;
   opacity: 0.8;
 }
+
+/* ===== media-section 見出し下線 ===== */
+.media-section h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.media-section h2::after {
+  content: "";
+  display: block;
+  width: 100%;        /* ← 文字幅に合わせる核心 */
+  height: 3px;
+  background: var(--main-green);
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
