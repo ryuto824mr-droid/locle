@@ -720,3 +720,56 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== フォント統一（トップページ準拠） ===== */
+body {
+  font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont,
+               'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+}
+
+/* ===== ぐんまお仕事図鑑：色ルール統一 ===== */
+
+/* 見出し */
+.media-section h1,
+.media-section h2 {
+  color: #111;
+}
+
+/* h3（カード見出し） */
+.media-section h3 {
+  color: var(--main-green);
+}
+
+/* 本文テキスト */
+.media-section p {
+  color: #444;
+}
+
+/* 補足テキスト */
+.media-section span {
+  color: #555;
+}
+
+/* ===== media-hero トップページ寄せ ===== */
+.media-hero {
+  padding: 160px 20px 120px;
+  background:
+    radial-gradient(circle at top left, #e0f2f1 0%, transparent 40%),
+    linear-gradient(135deg, #e8f5e9 0%, #ffffff 70%);
+  text-align: center;
+}
+
+.media-hero h1 {
+  font-size: 2.8rem;
+  line-height: 1.4;
+  color: #111;
+}
+
+.media-hero h1 span {
+  color: #2e7d32;
+}
+
+.media-hero p {
+  margin-top: 16px;
+  color: #555;
+}
