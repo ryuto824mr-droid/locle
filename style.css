@@ -516,3 +516,40 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== 見出しルール統一 ===== */
+
+/* セクション見出し（h2） */
+.media-section h2 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+/* h2の下線（LOCLEっぽさ） */
+.media-section h2::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--main-green);
+  margin: 12px auto 0;
+  border-radius: 999px;
+}
+
+/* カード内の小見出し（h3） */
+.media-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--main-green);
+}
+
+/* 本文テキスト */
+.media-section p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+}
