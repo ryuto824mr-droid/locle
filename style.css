@@ -117,13 +117,20 @@ body {
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 42px;
-  font-weight: 700;
+.hero {
+  background:
+    radial-gradient(circle at top left, #e0f2f1 0%, transparent 40%),
+    linear-gradient(135deg, #e8f5e9 0%, #ffffff 70%);
 }
 
-.hero span {
-  color: var(--main-green);
+.hero h1 {
+  font-size: 2.8rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #2e7d32;
 }
 
 .hero p {
@@ -139,6 +146,17 @@ body {
   );
   padding: 120px 20px;
   text-align: center;
+}
+
+.hero .btn {
+  font-size: 16px;
+  padding: 16px 44px;
+  box-shadow: 0 12px 24px rgba(68,177,63,0.3);
+}
+
+.hero .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 32px rgba(68,177,63,0.35);
 }
 
 
