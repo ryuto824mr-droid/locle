@@ -82,17 +82,17 @@
   <h2>メディア概要</h2>
 
   <div class="media-summary">
-    <div class="summary-card">
+    <div class="summary-card card fade-in">
       <h3>発信媒体</h3>
       <p>TikTok / YouTube / Instagram / Facebook</p>
     </div>
 
-    <div class="summary-card">
+    <div class="summary-card card fade-in">
       <h3>投稿頻度</h3>
       <p>週4本</p>
     </div>
 
-    <div class="summary-card">
+    <div class="summary-card card-fade-in">
       <h3>主な内容</h3>
       <p>
         社員の1日Vlog<br>
@@ -141,15 +141,15 @@
   <h2>実際の投稿事例</h2>
 
   <div class="media-works">
-    <div class="work-card">
+    <div class="work-card card fade-in">
       <p>製造業｜社員Vlog</p>
     </div>
 
-    <div class="work-card">
+    <div class="work-card card fade-in">
       <p>福祉業界｜職場紹介</p>
     </div>
 
-    <div class="work-card">
+    <div class="work-card card fade-in">
       <p>IT企業｜社長インタビュー</p>
     </div>
   </div>
@@ -183,18 +183,21 @@
 </section>
 
 <script>
-  const targets = document.querySelectorAll('.fade-in');
+const targets = document.querySelectorAll('.fade-in');
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      }
-    });
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    }
   });
+});
 
-  targets.forEach(el => observer.observe(el));
+targets.forEach(target => {
+  observer.observe(target);
+});
 </script>
+
 
   
 </body>
