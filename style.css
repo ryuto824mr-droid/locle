@@ -546,11 +546,7 @@ section {
     grid-template-columns: 1fr;
   }
 }
-: 900px) {
-  .media-features {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 /* ===== 見出しルール統一 ===== */
 
@@ -563,16 +559,6 @@ section {
   position: relative;
 }
 
-/* h2の下線（LOCLEっぽさ） */
-.media-section h2::after {
-  content: "";
-  display: block;
-  width: 48px;
-  height: 3px;
-  background: var(--main-green);
-  margin: 12px auto 0;
-  border-radius: 999px;
-}
 
 /* カード内の小見出し（h3） */
 .media-section h3 {
@@ -606,7 +592,6 @@ section {
   display: inline-block;
 }
 
-/* 見出し下の緑線（文字幅に合わせる） */
 .media-section h2::after {
   content: "";
   display: block;
@@ -616,6 +601,7 @@ section {
   margin: 16px auto 0;
   border-radius: 999px;
 }
+
 
 .contact h2 {
   display: inline-block;
