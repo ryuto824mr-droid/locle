@@ -665,17 +665,12 @@ section {
 
 /* ===== フォント統一（トップページ準拠） ===== */
 body {
+  color: #111;
   font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont,
                'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
 }
 
 /* ===== ぐんまお仕事図鑑：色ルール統一 ===== */
-
-/* 見出し */
-.media-section h1,
-.media-section h2 {
-  color: #111;
-}
 
 /* h3（カード見出し） */
 .media-section h3 {
