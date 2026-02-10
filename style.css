@@ -12,7 +12,7 @@
 
 
 /* ===== Header ===== */
-.header {
+header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -23,7 +23,7 @@
   transition: box-shadow 0.3s ease;
 }
 
-.header-inner {
+header-inner {
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px 24px;
@@ -90,7 +90,7 @@
   transform: translateY(-1px);
 }
 
-.header.scrolled {
+header.scrolled {
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
