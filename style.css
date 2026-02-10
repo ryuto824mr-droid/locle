@@ -773,3 +773,23 @@ body {
   margin-top: 16px;
   color: #555;
 }
+
+/* ===== 主な内容（メディア概要内） ===== */
+.media-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.media-summary h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: var(--main-green);
+}
+
+.media-summary p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+}
