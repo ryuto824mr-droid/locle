@@ -805,9 +805,13 @@ section {
   margin-top: 16px;
 }
 
-/* ===== TikTok見出しだけ中央寄せ修正 ===== */
-.media-section h2 {
+/* ===== 強制的に中央寄せ（最終修正） ===== */
+.media-section {
   text-align: center;
+}
+
+.media-section h2 {
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -817,7 +821,6 @@ section {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
-
 .media-works .tiktok-embed {
   scroll-snap-align: center;
 }
