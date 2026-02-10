@@ -865,3 +865,15 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+.hero {
+  text-align: center;
+}
+
+.about,
+.section,
+.works,
+.media-highlight,
+.contact {
+  text-align: center;
+}
