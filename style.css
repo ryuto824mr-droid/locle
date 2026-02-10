@@ -490,11 +490,6 @@ section {
   color: var(--main-green);
 }
 
-.media-section h2 {
-  font-size: 32px;
-  margin-bottom: 32px;
-}
-
 /* ===== 共通レイアウト余白 ===== */
 section {
   padding: 100px 20px;
@@ -544,15 +539,6 @@ section {
 
 /* ===== 見出しルール統一 ===== */
 
-/* セクション見出し（h2） */
-.media-section h2 {
-  font-size: 32px;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  margin-bottom: 32px;
-  position: relative;
-}
-
 
 /* カード内の小見出し（h3） */
 .media-section h3 {
@@ -569,12 +555,6 @@ section {
   color: #444;
 }
 
-
-/* ===== media-section 見出し下線 ===== */
-.media-section h2 {
-  position: relative;
-  display: inline-block;
-}
 
 /* ===== 見出しルール（最終・統一版） ===== */
 .media-section h2 {
