@@ -797,3 +797,31 @@ body {
 .center-btn {
   text-align: center;
 }
+
+.basic-info {
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 48px;
+}
+
+.basic-info .summary-card {
+  background: #f8fafc;
+  border: 2px solid #e5e7eb;
+}
+
+.contents-info {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.contents-info .summary-card {
+  border-left: 6px solid var(--main-green);
+}
+
+.basic-info h3 {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contents-info h3 {
+  font-size: 1.1rem;
+  color: var(--main-green);
+}
