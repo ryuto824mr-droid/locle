@@ -804,3 +804,10 @@ section {
   background: #1fa84a;
   margin-top: 16px;
 }
+
+/* ===== TikTok見出しだけ中央寄せ修正 ===== */
+.media-section h2 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
