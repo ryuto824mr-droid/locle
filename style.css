@@ -507,11 +507,16 @@ section {
 }
 
 .section-inner,
-.media-section,
 .contact-wrapper {
   max-width: 1100px;
   margin: 0 auto;
 }
+
+/* media-section は背景専用 */
+.media-section {
+  width: 100%;
+}
+
 
 /* ===== 共通カードデザイン ===== */
 .card {
