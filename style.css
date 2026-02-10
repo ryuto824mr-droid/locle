@@ -811,3 +811,13 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
+
+/*流れている感じ*/
+.media-works {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.media-works .tiktok-embed {
+  scroll-snap-align: center;
+}
