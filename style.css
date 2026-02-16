@@ -901,3 +901,11 @@ header {
   align-items: center;
   gap: 24px;
 }
+
+.strength-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin: 20px 0;
+  border-radius: 12px;
+}
