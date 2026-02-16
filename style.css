@@ -920,3 +920,9 @@ header {
   flex: 1;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .strength-list {
+    flex-direction: column;
+  }
+}
