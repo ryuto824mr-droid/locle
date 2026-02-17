@@ -904,10 +904,11 @@ header {
 
 .strength-image {
   width: 100%;
-  height: auto;
-  margin: 20px 0;
-  border-radius: 12px;
+  height: 140px;
+  object-fit: contain;
+  background: #f5f5f5;
 }
+
 
 .strength-list {
   display: flex;
