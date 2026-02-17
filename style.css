@@ -937,3 +937,31 @@ header {
   border-radius: 20px;      /* ← 角丸 */
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);  /* ← ふわっと影 */
 }
+
+.media-cta {
+  background: linear-gradient(135deg, #0F3D2E, #145A43);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.media-inner h2 {
+  font-size: 36px;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+.media-inner p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.limited-badge {
+  display: inline-block;
+  background: #ffffff;
+  color: #0F3D2E;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+}
