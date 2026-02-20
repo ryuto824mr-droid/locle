@@ -969,16 +969,31 @@ header {
 .sns-icons {
   display: flex;
   justify-content: center;
-  gap: 24px;
-  margin-top: 20px;
+  align-items: center;
+  gap: 48px;
+  margin-top: 32px;
+}
+
+.sns-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  transition: 0.3s ease;
 }
 
 .sns-icons img {
-  width: 42px;
-  height: 42px;
-  transition: 0.3s;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s ease;
 }
 
-.sns-icons img:hover {
-  transform: scale(1.15);
+.sns-icons a:hover {
+  transform: translateY(-6px);
+}
+
+.sns-icons a:hover img {
+  transform: scale(1.1);
 }
