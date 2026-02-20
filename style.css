@@ -965,3 +965,20 @@ header {
   font-weight: bold;
   font-size: 14px;
 }
+
+.sns-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.sns-icons img {
+  width: 42px;
+  height: 42px;
+  transition: 0.3s;
+}
+
+.sns-icons img:hover {
+  transform: scale(1.15);
+}
