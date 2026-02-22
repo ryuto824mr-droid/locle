@@ -997,3 +997,9 @@ header {
 .sns-icons a:hover img {
   transform: scale(1.1);
 }
+
+.feature-icon {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
+}
