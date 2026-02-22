@@ -1003,3 +1003,13 @@ header {
   height: auto;
   margin-bottom: 20px;
 }
+
+.media-brand {
+  text-align: center;
+  padding: 40px 0 10px;
+}
+
+.media-brand img {
+  width: 120px;   /* 正方形ならこのくらいが綺麗 */
+  height: auto;
+}
