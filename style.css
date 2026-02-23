@@ -638,7 +638,7 @@ section {
 
 /* ===== 実際の投稿事例：横並び ===== */
 .media-works {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   align-items: start;
