@@ -23,7 +23,7 @@ header {
   transition: box-shadow 0.3s ease;
 }
 
-.header-inner {
+header-inner {
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px 24px;
@@ -842,7 +842,7 @@ body {
 }
 
 .media-problems {
-  display: grid;
+  display: flex;
   gap: 16px;
   justify-content: center; /* ← 必須 */
   flex-wrap: wrap;
