@@ -842,7 +842,7 @@ body {
 }
 
 .media-problems {
-  display: flex;
+  display: grid;
   gap: 16px;
   justify-content: center; /* ← 必須 */
   flex-wrap: wrap;
