@@ -843,9 +843,10 @@ body {
 
 .media-problems {
   display: grid;
-  gap: 16px;
-  justify-content: center; /* ← 必須 */
-  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr); /* 2列 */
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .media-summary {
