@@ -1008,3 +1008,22 @@ header {
   text-align: center;
   padding: 40px 0 10px;
 }
+
+.problem-card {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.problem-card p {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.problem-image {
+  width: 80px;  /* 好みで調整 */
+}
+
+.problem-image {
+  width: 80px;
+  margin-top: 10px;
+}
