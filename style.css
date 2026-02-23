@@ -1027,14 +1027,3 @@ header {
   width: 80px;
   margin-top: 10px;
 }
-
-.media-works {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  justify-content: center;
-}
-
-.media-works > * {
-  flex: 0 0 calc(50% - 16px);
-}
