@@ -526,11 +526,26 @@ section {
   text-align: center;
 }
 
-.media-highlight-logo {
-  width: 120px;
-  height: auto;
-  margin: 0 auto 20px;
+.media-highlight-logo-link {
   display: block;
+  width: 100px;
+  margin: 0 auto 20px;
+  transition: transform 0.3s ease;
+}
+
+.media-highlight-logo-link:hover {
+  transform: translateY(-4px);
+}
+
+.media-highlight-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.highlight-text {
+  color: var(--main-green);
+  font-weight: 700;
 }
 
 .media-highlight-card h2 {
