@@ -522,7 +522,19 @@ section {
   margin: 0 auto;
   padding: 48px 40px;
   border-left: 6px solid var(--main-green);
+  background: linear-gradient(160deg, #ffffff 0%, #f3faf2 100%);
   text-align: center;
+}
+
+.media-highlight-logo {
+  width: 120px;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.media-highlight-card h2 {
+  color: var(--main-green);
 }
 
 .media-highlight-card .btn {
