@@ -797,13 +797,13 @@ body {
   border: 2px solid #e5e7eb;
 }
 
-.contents-info {
-  display: grid;
+.media-summary.contents-info {
+  display: grid !important;
   grid-template-columns: repeat(2, 1fr);
 }
 
 @media (max-width: 640px) {
-  .contents-info {
+  .media-summary.contents-info {
     grid-template-columns: 1fr;
   }
 }
