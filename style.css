@@ -1,4 +1,3 @@
-
 :root {
   --main-green: #44B13F;
   --deep-green: #2F8A2A;
@@ -152,6 +151,11 @@ header.scrolled {
 .section h2 {
   font-size: 32px;
   margin-bottom: 32px;
+  color: var(--deep-green);
+}
+
+.works h2 {
+  color: var(--deep-green);
 }
 
 .bg-light {
