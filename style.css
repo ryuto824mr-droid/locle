@@ -1,5 +1,7 @@
+
 :root {
   --main-green: #44B13F;
+  --deep-green: #2F8A2A;
   --bg-light: #fafafa;
   --text-main: #111;
 }
@@ -549,7 +551,7 @@ section {
 }
 
 .media-highlight-card h2 {
-  color: var(--main-green);
+  color: var(--deep-green);
 }
 
 .media-highlight-card .btn {
@@ -914,6 +916,10 @@ body {
 
 .hero {
   text-align: center;
+}
+
+.about h2 {
+  color: var(--deep-green);
 }
 
 .about,
