@@ -974,10 +974,17 @@ body {
   margin: 0 auto;
 }
 
-.footer-logo {
-  height: 28px;
+.footer-logo-badge {
+  display: inline-block;
+  background: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
   margin-bottom: 12px;
-  filter: brightness(0) invert(1);
+}
+
+.footer-logo {
+  height: 24px;
+  display: block;
 }
 
 .footer-brand p {
