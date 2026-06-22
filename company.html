@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>会社概要｜株式会社LOCLE</title>
+  <meta name="description" content="株式会社LOCLE（ロクル）の会社概要。会社名・代表者・設立日・事業内容などをご紹介します。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <!-- ハンバーガーメニュー -->
+    <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- ロゴ -->
+    <a href="index.html" class="logo">
+      <img src="img/locle-logo.png" alt="株式会社LOCLE ロゴ">
+    </a>
+
+    <!-- ナビ -->
+    <nav class="nav">
+      <a href="oshigotozukan.html">ぐんまお仕事図鑑</a>
+      <a href="index.html#contact" class="nav-btn">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- サイドメニュー -->
+<div class="side-menu" id="sideMenu">
+  <button class="side-menu-close" id="sideMenuClose" aria-label="閉じる">×</button>
+  <nav class="side-menu-nav">
+    <a href="index.html">トップ</a>
+    <a href="message.html">代表メッセージ</a>
+    <a href="company.html">会社概要</a>
+    <a href="oshigotozukan.html">ぐんまお仕事図鑑</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </nav>
+</div>
+<div class="side-menu-overlay" id="sideMenuOverlay"></div>
+
+<section class="company-info fade-in" style="padding-top:140px;">
+  <h2>会社概要</h2>
+
+  <div class="company-info-card card">
+    <table class="company-table">
+      <tr>
+        <th>会社名</th>
+        <td>株式会社LOCLE（ロクル）</td>
+      </tr>
+      <tr>
+        <th>代表者</th>
+        <td>代表取締役　山田 武蔵</td>
+      </tr>
+      <tr>
+        <th>設立</th>
+        <td>2025年3月3日</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <td>〒000-0000　群馬県（仮）（後ほど正式な住所に差し替え予定）</td>
+      </tr>
+      <tr>
+        <th>事業内容</th>
+        <td>
+          ・SNS運用代行事業（採用・広報支援）<br>
+          ・自社メディア「ぐんまお仕事図鑑」の運営<br>
+          ・地方副業マッチング事業
+        </td>
+      </tr>
+      <tr>
+        <th>会社名の由来</th>
+        <td>
+          「Local（地方）」と「People（人々）」を掛け合わせた造語。<br>
+          地方と人のつながりを生み出す会社になりたいという想いを込めています。
+        </td>
+      </tr>
+      <tr>
+        <th>連絡先</th>
+        <td>matsuzaki9283@gmail.com</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="img/locle-logo.png" alt="株式会社LOCLE ロゴ" class="footer-logo">
+      <p>地方と人をつなぐ、群馬発のSNSマーケティング会社</p>
+    </div>
+
+    <nav class="footer-links">
+      <a href="index.html">トップ</a>
+      <a href="message.html">代表メッセージ</a>
+      <a href="company.html">会社概要</a>
+      <a href="oshigotozukan.html">ぐんまお仕事図鑑</a>
+      <a href="index.html#contact">お問い合わせ</a>
+    </nav>
+
+    <p class="footer-copyright">© 2025 LOCLE Inc. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const header = document.querySelector("header");
+  window.addEventListener("scroll", () => {
+    header.classList.toggle("scrolled", window.scrollY > 20);
+  });
+</script>
+
+<script>
+  const fadeItems = document.querySelectorAll(".fade-in");
+  const onScroll = () => {
+    fadeItems.forEach(item => {
+      const rect = item.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        item.classList.add("active");
+      }
+    });
+  };
+  window.addEventListener("scroll", onScroll);
+  window.addEventListener("load", onScroll);
+</script>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const sideMenu = document.getElementById("sideMenu");
+  const sideMenuClose = document.getElementById("sideMenuClose");
+  const sideMenuOverlay = document.getElementById("sideMenuOverlay");
+
+  function openMenu() {
+    sideMenu.classList.add("open");
+    sideMenuOverlay.classList.add("open");
+  }
+  function closeMenu() {
+    sideMenu.classList.remove("open");
+    sideMenuOverlay.classList.remove("open");
+  }
+
+  menuToggle.addEventListener("click", openMenu);
+  sideMenuClose.addEventListener("click", closeMenu);
+  sideMenuOverlay.addEventListener("click", closeMenu);
+</script>
+
+</body>
+</html>
