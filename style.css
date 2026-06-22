@@ -926,6 +926,86 @@ body {
   color: var(--deep-green);
 }
 
+.company-info-card {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.company-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.company-table th,
+.company-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.7;
+}
+
+.company-table th {
+  width: 120px;
+  color: var(--deep-green);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.company-info h2 {
+  color: var(--deep-green);
+}
+
+/* ===== フッター ===== */
+.site-footer {
+  background: #1f2421;
+  color: #cfd6d2;
+  padding: 60px 20px 32px;
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  height: 28px;
+  margin-bottom: 12px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #aab3ae;
+  margin-bottom: 28px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #cfd6d2;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--main-green);
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: #828b86;
+}
+
 .about,
 .section,
 .works,
