@@ -1027,9 +1027,21 @@ header {
   margin: 0 auto;
   padding: 16px 24px;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
+}
+
+.header-inner .menu-toggle {
+  justify-self: start;
+}
+
+.header-inner .logo {
+  justify-self: center;
+}
+
+.header-inner .nav {
+  justify-self: end;
 }
 
 .nav {
