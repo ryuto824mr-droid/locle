@@ -11,6 +11,12 @@
 
 <header class="header">
   <div class="header-inner">
+    <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <a href="index.html" class="logo">
       <img src="img/locle-logo.png" alt="株式会社LOCLE ロゴ">
     </a>
@@ -21,6 +27,19 @@
     </nav>
   </div>
 </header>
+
+<!-- サイドメニュー -->
+<div class="side-menu" id="sideMenu">
+  <button class="side-menu-close" id="sideMenuClose" aria-label="閉じる">×</button>
+  <nav class="side-menu-nav">
+    <a href="index.html">トップ</a>
+    <a href="message.html">代表メッセージ</a>
+    <a href="company.html">会社概要</a>
+    <a href="oshigotozukan.html">ぐんまお仕事図鑑</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </nav>
+</div>
+<div class="side-menu-overlay" id="sideMenuOverlay"></div>
 
   
 <!-- ===== Hero ===== -->
@@ -339,6 +358,26 @@ const observer = new IntersectionObserver(entries => {
 targets.forEach(target => {
   observer.observe(target);
 });
+</script>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const sideMenu = document.getElementById("sideMenu");
+  const sideMenuClose = document.getElementById("sideMenuClose");
+  const sideMenuOverlay = document.getElementById("sideMenuOverlay");
+
+  function openMenu() {
+    sideMenu.classList.add("open");
+    sideMenuOverlay.classList.add("open");
+  }
+  function closeMenu() {
+    sideMenu.classList.remove("open");
+    sideMenuOverlay.classList.remove("open");
+  }
+
+  menuToggle.addEventListener("click", openMenu);
+  sideMenuClose.addEventListener("click", closeMenu);
+  sideMenuOverlay.addEventListener("click", closeMenu);
 </script>
 
 
