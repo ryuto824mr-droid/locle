@@ -1002,14 +1002,32 @@ body {
 }
 
 .footer-links a {
+  position: relative;
   color: #cfd6d2;
   text-decoration: none;
   font-size: 14px;
-  transition: color 0.2s ease;
+  padding-bottom: 4px;
+  transition: color 0.25s ease;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: var(--main-green);
+  transform: translateX(-50%);
+  transition: width 0.25s ease;
 }
 
 .footer-links a:hover {
-  color: var(--main-green);
+  color: #fff;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
 }
 
 .footer-copyright {
